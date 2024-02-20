@@ -1,0 +1,105 @@
+{% extends "shop/base.html" %}
+<title>{% block title %} Add- Employee {% endblock %}</title>
+{% block css %} 
+      
+       
+  {% endblock %}
+ 
+{% block body %} 
+{% load static %}
+
+<div class="container"> 
+<div class="col my-4">
+  <h2 class="text-center my-4">Work Experiences:</h2>
+  
+  <form method="post" action="" > {% csrf_token %}
+
+    <div class="form-row">    
+      <div class="form-group col-md-3">
+        <label for="inputName">Company Name :</label>
+        <input type="text" name="company_name" class="form-control" id="inputName" placeholder="Compnay Name">
+      </div>
+  
+      <div class="form-group col-md-2">
+        <label for="inputEmail4">Role :</label>
+        <input type="text" name="role" class="form-control" id="inputEmail4" placeholder="Role">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Date of Join :</label>
+        <input type="date" name="date_of_join" class="form-control" id="inputEmail4" placeholder="Date of Join">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Last Date :</label>
+        <input type="date" name="last_date" class="form-control" id="inputEmail4" placeholder="Last Date">
+      </div>
+  
+    </div>
+
+    <div class="form-row">    
+      <div class="form-group col-md-3">
+        <label for="inputName">Company Name :</label>
+        <input type="text" name="company_name" class="form-control" id="inputName" placeholder="Compnay Name">
+      </div>
+  
+      <div class="form-group col-md-2">
+        <label for="inputEmail4">Role :</label>
+        <input type="text" name="role" class="form-control" id="inputEmail4" placeholder="Role">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Date of Join :</label>
+        <input type="date" name="date_of_join" class="form-control" id="inputEmail4" placeholder="Date of Join">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Last Date :</label>
+        <input type="date" name="last_date" class="form-control" id="inputEmail4" placeholder="Last Date">
+      </div>
+  
+    </div>
+
+    <div class="form-row">    
+      <div class="form-group col-md-3">
+        <label for="inputName">Company Name :</label>
+        <input type="text" name="company_name" class="form-control" id="inputName" placeholder="Compnay Name">
+      </div>
+  
+      <div class="form-group col-md-2">
+        <label for="inputEmail4">Role :</label>
+        <input type="text" name="role" class="form-control" id="inputEmail4" placeholder="Role">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Date of Join :</label>
+        <input type="date" name="date_of_join" class="form-control" id="inputEmail4" placeholder="Date of Join">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="inputEmail4">Last Date :</label>
+        <input type="date" name="last_date" class="form-control" id="inputEmail4" placeholder="Last Date">
+      </div>
+  
+    </div>
+     <span><a href="">Add More </a></span>
+
+    <div class="col text-center mt-4">
+    <button type="submit" class="btn btn-primary btn-lg">Save Employee</button>
+    </div>
+
+  </form>
+  </div>
+  </div>
+  
+</div>
+</div>
+
+</div>
+
+
+{% endblock %}
+
+
+  
+
